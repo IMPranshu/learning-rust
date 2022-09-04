@@ -1,29 +1,15 @@
-fn main() { // variables
+fn main() { // constants
 
-    // variables in RUST is different from other programming languages in general
-    // It is staticly and strongly typed
+    // similar to immutable but the convention to create variables is different
 
-    let x =4; // implicitly assigned by compiler
-    //let y: u32 = 5; // expliccitly typed
+    // A constant is something whose value and type cannot change during the
+    // entirety of the program once it is defined.
 
-    println!("x is: {} ", x);
-
-    { // different scope
-        let x = x + 2;
-        println!("x is: {}", x);
-    }
-
-    let x = x+1;
-    println!("x is: {} ", x);
-
-
+    const SECONDS_IN_MINUTE: u32 = 60;
+    println!("{}", SECONDS_IN_MINUTE);
 
 
 
 
 }
 
-// by default in Rust all variables defined are immutable i.e. we cannot change them
-
-
-// Name shadowing means using the same variable name but with different scope
