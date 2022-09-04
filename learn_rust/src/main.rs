@@ -1,17 +1,15 @@
-fn main() { //  all the variables are immutable by default and we can use 'mut' keyword to make it muttable.
+fn main() {
+    // array
 
-    // Compund Data types
+    // only similar type of data can be grouped together to make an array.
+    let arr = [1,3,4]; // implicit
+    // we can't add an elemnt to the ayyar, we have make a new array.
 
-    // tuple: It is going to be a fixed length
-    // of sequence of elements that is immutable
+    let arr2: [i32; 5]=[1,2,3,4,5]; // explicit [datatype, number of elements]
 
-    let mut tup = (1, true, 'b'); // impliccitly assigned to (i32, bool, char)
-    let tup2: (i8, bool, char) = (1, true, 'b'); // tup2 is not equal to tup as the datatype is different for both
 
-    tup = (10,false, 'c','e'); // we cannot change the type of the tuple. If it is having 3 elements we can't add 4 elements and likewise.
-
-    println!("{}", tup.0);
-
+    let arr3: [i32,5];// uninitalized array remains like this.
+    println!("{}", arr[4]); // we will get an error when try to access the empty array element.
 
 
 
