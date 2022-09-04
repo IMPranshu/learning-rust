@@ -1,33 +1,18 @@
-fn main() { // Primitive Data types
+fn main() { //  all the variables are immutable by default and we can use 'mut' keyword to make it muttable.
 
-    // these are the fundamental data types used to declare a variable
+    // Compund Data types
 
-    // We have 2 categories of PDT in RUST
-    // 1. Scaler: Each value can be compared to any other values as either equal, greater or less
-    // Ex: int, floar, char
+    // tuple: It is going to be a fixed length
+    // of sequence of elements that is immutable
 
-    // 2. Compound: aka Composite data type i.e. multiple data types.
-    // Ex: tuple, array.
+    let mut tup = (1, true, 'b'); // impliccitly assigned to (i32, bool, char)
+    let tup2: (i8, bool, char) = (1, true, 'b'); // tup2 is not equal to tup as the datatype is different for both
 
-    let x: i32 = 2; // Explicitly defined integer of 32 bits. It is also the default type for the impllicit
-    // i8, i16, i32, i64, i128
+    tup = (10,false, 'c','e'); // we cannot change the type of the tuple. If it is having 3 elements we can't add 4 elements and likewise.
 
-    // u8 2^8 so range is 0 to (2^8 - 1) i.e 0 to 255
-    // i8 2^8 but range is -2^7 to 2^7 - 1 i.e -128 to 127
+    println!("{}", tup.0);
 
-    // f32 aka single precision and f64 aka double precision
 
-    // f64 is the default precision when implicit conversion
-
-    let float = 10.92;
-
-    // boolean 0 or 1
-
-    let t_or_f = false;
-
-    // char
-
-    let letter: char = 'a';
 
 
 
