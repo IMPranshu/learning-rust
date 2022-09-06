@@ -1,15 +1,13 @@
+use std::io;
+
 fn main() {
-    // arithmetic
-    // default fro int is i8 and for float is f64
+    // converting string to integer
 
-    let x = 93_02_i32;
-    let x_max = (i32::MAX as i64) + 1;
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).expect("error while reading");
+    println!("{}", input);
 
-    let y: i32 = 10;
 
-    let z = x as f64 / y as f64; // explicit type conversion/
-
-    println!("{}", z);
 
 
 
